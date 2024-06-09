@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+    background-color: var(--colorPageBackground);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--themesDarkColorTheme);
+    font: 16px/1.5 sans-serif;
+    color: var(--themesDarkColorText);
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: serif;
+    font-weight: normal;
+    color: var(--themesDarkColorText);
+    margin: 0 0 15px;
+}
+
+p,
+ul,
+ol,
+table,
+dl {
+    margin: 0 0 20px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a {
+    color: var(--colorPageLinks);
+    text-decoration: underline solid var(--colorGreenShadow);
+}
+
+a:hover {
+    color: var(--colorGreen);
+}
+
+code {
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal,
+        Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+    font-size: 12px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+header,
+section,
+footer {
+    padding: 50px 0;
+    width: 860px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.inner--left {
+    width: 270px;
+}
+
+.inner--right {
+    width: 500px;
+}
+
+@media (max-width: 960px) {
+    header,
+    section,
+    footer {
+        width: initial;
+        position: initial;
+        padding: 0 20px;
+    }
+
+    .inner {
+        padding: 20px 0;
+    }
+
+    .inner--left {
+        width: auto;
+    }
+
+    .inner--right {
+        width: auto;
+        border: 1px solid var(--themesDarkColorOutline);
+        border-width: 1px 0;
+    }
+}
+
+.code {
+    margin-top: 10px;
+}
+.code__button {
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 0;
+    color: var(--colorPageLinks);
+    text-decoration: underline solid var(--colorGreenShadow);
+}
+.code__button:hover {
+    color: var(--colorGreen);
+}
+
+@media print {
+    body {
+        padding: 0.4in;
+        font-size: 12pt;
+    }
+}
+
+.u-margin-top {
+    margin-top: 1.875rem;
+}
